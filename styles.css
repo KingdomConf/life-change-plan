@@ -13,7 +13,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    background: white;
+    background: #000;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ body {
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    background: #000;
+    background: #1a1a1a;
     margin: 2px;
     position: relative;
     flex: 1;
@@ -91,7 +91,7 @@ body {
 .nav-item:nth-child(9).active { background: #ffe401; }
 
 .nav-item.active::before {
-    background: #000;
+    background: #1a1a1a;
 }
 
 .content {
@@ -99,8 +99,8 @@ body {
     min-height: 300px;
     line-height: 1.8;
     font-size: 16px;
-    color: #333;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    color: white;
+    background: #000;
 }
 
 .content h3 {
@@ -115,7 +115,7 @@ body {
 }
 
 .content strong {
-    color: #333;
+    color: white;
     font-weight: 700;
 }
 
