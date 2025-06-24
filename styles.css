@@ -6,7 +6,9 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -14,9 +16,9 @@ body {
     max-width: 100%;
     margin: 0;
     background: #000;
-    border-radius: 10px;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     box-sizing: border-box;
 }
 
@@ -29,6 +31,7 @@ body {
     background: linear-gradient(90deg, #0700fe 0%, #ff14ae 50%, #ffe401 100%);
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .nav-item {
