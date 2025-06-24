@@ -10,12 +10,14 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .nav-bar {
@@ -25,14 +27,16 @@ body {
     white-space: nowrap;
     padding: 2px;
     background: linear-gradient(90deg, #0700fe 0%, #ff14ae 50%, #ffe401 100%);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-item {
-    padding: 20px 25px;
+    padding: 15px 20px;
     cursor: pointer;
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
@@ -41,6 +45,9 @@ body {
     margin: 2px;
     position: relative;
     flex: 1;
+    min-width: 0;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .nav-item::before {
@@ -134,14 +141,23 @@ body {
     }
     
     .nav-item {
-        padding: 15px 20px;
-        font-size: 14px;
+        padding: 12px 15px;
+        font-size: 12px;
         min-width: fit-content;
+        flex: none;
+        white-space: nowrap;
     }
     
     .content {
         padding: 20px;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item {
+        padding: 10px 12px;
+        font-size: 11px;
     }
 }
 
