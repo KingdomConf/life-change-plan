@@ -38,8 +38,8 @@ const sections = {
     `
 };
 
-const navItems = document.querySelectorAll('.nav-item');
-const content = document.getElementById('content');
+const navItems. = document.querySelectorAll('.nav-item');
+const content. = document.getElementById('content');
 
 navItems.forEach(item => {
     item.addEventListener('click', function() {
